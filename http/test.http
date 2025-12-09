@@ -1,0 +1,37 @@
+
+###
+#INSERT INTO student (name, grade, professor_email) VALUES ('홍길동', 1, 'prof@univ.ac.kr');
+#INSERT INTO student (name, grade, professor_email) VALUES ('한둘리', 2, 'prof@univ.ac.kr');
+#INSERT INTO student (name, grade, professor_email) VALUES ('김철수', 3, 'prof@univ.ac.kr');
+#INSERT INTO student (name, grade, professor_email) VALUES ('이영희', 4, 'prof@univ.ac.kr');
+###Layered
+###홍길동 1학년
+POST localhost:8080/api/layered/diagnosis/apply/1
+Content-Type: application/json
+
+###한둘리 2학년
+POST localhost:8080/api/layered/diagnosis/apply/2
+Content-Type: application/json
+###김철수 3학년
+POST localhost:8080/api/layered/diagnosis/apply/3
+Content-Type: application/json
+
+###이영희 4학년
+POST localhost:8080/api/layered/diagnosis/apply/4
+Content-Type: application/json
+
+###Hexagonal
+###홍길동 1학년
+POST localhost:8080/api/hexagonal/diagnosis/apply/1
+Content-Type: application/json
+
+###한둘리 2학년
+POST localhost:8080/api/hexagonal/diagnosis/apply/2
+Content-Type: application/json
+###김철수 3학년
+POST localhost:8080/api/hexagonal/diagnosis/apply/3
+Content-Type: application/json
+
+###이영희 4학년
+POST localhost:8080/api/hexagonal/diagnosis/apply/4
+Content-Type: application/json
